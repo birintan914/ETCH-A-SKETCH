@@ -11,3 +11,15 @@ for(let i=0; i<16; i++){
     body.appendChild(row)
 }
 
+
+
+let boxes = document.querySelectorAll('.box')
+// boxes.forEach(box => box.addEventListener('mouseover', function(event){
+//     console.log(event.target)
+// })
+
+// );
+
+boxes.forEach(box => box.addEventListener('mouseover', function(e){
+    e.target.style.backgroundColor = 'white';
+}))
