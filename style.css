@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: black;
+}
+body {
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 10px;
+    height: 10px;
+    border: 1px solid royalblue;
+    flex: 1;
+}
