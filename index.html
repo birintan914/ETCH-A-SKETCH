@@ -8,8 +8,37 @@
         <script src="script.js" defer></script>
         <title>Document</title>
     </head>
-
+    <button data-open-Menu="#reset-grid" class="reset-btn">Reset Grid</button>
     <body>
-        
+        <div class="modal" id="reset-grid">
+            <div class="modal-header">
+                <div class="title">Reset Menu</div>
+                <button data-close-Menu class="close-button">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <section class="menu-section">
+                    <div class="option">
+                        <h4>Choose grid size:</h4>
+                        <input class="number-box" type="number" id="gridSize" name="gridSize" min="0" max="100">
+                    </div>
+                </section>
+                <section class="menu-section">
+                    <div class="option">
+                        <h4>Choose grid style:</h4>
+                        <div class="radio">
+                            <input class="radio-input" type="radio" name="gridStyle" id="rainbow" value="rainbow">
+                            <label class="radio-label" for="rainbow">Rainbow</label>
+                            <input class="radio-input" type="radio" name="gridStyle" id="shades" value="shades">
+                            <label class="radio-label" for="shades">Shades</label>
+                        </div>
+                    </div>
+                </section>
+                <section class="menu-section">
+                    <button id="menu-submit" class="submit">Submit</button>
+                </section>
+            </div>
+        </div>
     </body>
+    <div id="overlay"></div>
 </html>
